@@ -1,0 +1,7 @@
+{% use 'partials/header/nav.html.twig' %}
+{% block header %}
+    <p> I am the header.</p>
+    {% block nav_menu %}
+        {{ parent() }}
+    {% endblock %}
+{% endblock %}
